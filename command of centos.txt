@@ -1,0 +1,42 @@
+- muốn chuyển đổi từ quyền user sang quyền admin (root) thì dùng lệnh: $su 
+	muốn chuyển lại thì dùng lệnh: #exit
+
+- kiểm tra mình đang dùng shell gì thì dùng lệnh: $echo $SHELL
+
+- xem các biến local environment variable: $env
+- từ history, muốn chạy lại cái nào thì thêm dấu "!" phía trước số lệnh,
+	ví dụ muốn chạy lại lệnh số 102 thì gõ: $!102
+
+- tạo alias: $alias <tên muốn đặt>='<lệnh muốn thay thế>'
+	ví dụ: mỗi lần rm cái gì đó thì mình cần nhắc nhở thì đặt alias cho rm với oftion là -i
+		$alias rm='rm -i'
+	khi đó mỗi lần gõ rm thì command line sẽ hỏi có muốn delete hay ko tương ứng với
+	oftion -i
+
+- thoát terminal thì gõ: $exit 
+	hoặc ctrl+D
+
+- thay đổi địa chỉ mặc định của path: sách "linux-bible 9th ed 2015" trang 91(131/914)
+
+- lấy thông tin về các lệnh trong linux: $echo $PATH
+	sau đó là: $ls /bin
+
+- tìm kiếm các lệnh và dùng lệnh để tìm kiếm thông tin:
+	dùng help: $help <tên lệnh>
+	dùng info: $info <tên lệnh>
+	dùng man : $man <số section> <tên lệnh>
+		+ nếu không cung cấp số section thì mặc định là 1
+		+ xem thêm thông tin về số section: sách "linux-bible 9th ed 2015" trang 93(133/914)
+		+ khi muốn tìm từ khóa trong man thì dùng dấu "/", sau đó gõ từ khóa và enter. nhấn "n"
+		  để tìm từ khóa trên xuống dưới. nhấn "N" để tìm từ khóa ngược lên trên
+
+- cách xem permission của một file: $ls -ld <tên file/folder>
+
+- cách tạo file rỗng: dùng lệnh: $touch <tên file> <tên file> 
+	phía sau có thể có nhiều file nữa và ngăn cách nhau bằng dấu cách
+
+- tìm tên file trong một directory: dùng lệnh: $ls *<chữ cái>*
+	tham khảo thêm trang: 103 (143 / 914) trong sách: "linux-bible 9th ed 2015"
+
+- 
+
